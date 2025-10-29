@@ -1,0 +1,66 @@
+
+/*Imported from google fotns*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* The brand variables*/
+:root{
+    --primary:#7b4c2f;
+    --light:#fffdf8;
+    --dark:#2e2823;
+    --muted:#f8f6f5;
+
+    --font-base:Roboto, Verdana, sans-serif;
+    --font-heading:'Noto Serif', serif;
+    
+    --font-size:16px;
+    --font-size-sm:0.8rem;
+    --font-size-lg:1.2rem;
+
+    --space-0:0rem;
+    --space-1:0.5rem;
+    --space-2:0.5rem;
+    --space-3:2rem
+}
+/* Css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-base);
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-heading);
+    margin-bottom: var(--space-1);
+}
+/**********************************  SWATCHES  ***********************************/
+.bg-primary{background-color: var(--primary);}
+.bg-light{ background-color:var(--light);}
+.bg-dark{ background-color:var(--dark);}
+.bg-muted{background-color: var(--muted);}
+
+.text-primary{color: #7b4c2f;}
+.text-light{ color: #fffdf8;}
+.text-dark{ color: #2e2823;}
+.text-muted{color: #f8f6f5;}
+
+
+.shadow-dark{box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(46,40, 35,0.2);}
+
+/**********************************  SWATCHES  ***********************************/
+
+.swatches{
+    display: flex;
+    gap: var(--space-2);
+}
+
+
+.swatch .swatch-value{
+    aspect-ratio: 1/1;
+    width: 3rem;
+    border-radius: 100%;
+    
+}
